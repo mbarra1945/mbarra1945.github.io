@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>freeCodeCamp: Build a Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+    <style>
+        .navbar {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        header {
+            height: 100vh;
+            background: 
+            /* top, transparent red, faked with gradient */
+            linear-gradient(
+                rgba(52, 58, 64, 0.5),
+                rgba(52, 58, 64, 0.5)
+            ),
+            /* bottom, image */
+            url('https://image.ibb.co/eX52Rc/bg.jpg') no-repeat 0 0;
+            background-size: cover;
+            padding: 154px 0 100px;
+        }
+
+        @media (min-width: 992px) {
+            header {
+                padding: 156px 0 100px;
+            }
+        }
+
+        section {
+            padding: 150px 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+            font-family: 'Montserrat';
+        }
+
+        .social-network {
+            border: 0.1rem solid #fff;
+            border-radius: 50%;
+            margin: 0.45rem;
+            padding: 1rem;
+        }
+
+        footer a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        footer a:hover {
+            color: inherit;
+        }
+        
+        section#about .row {
+            margin-top: 0.6rem;
+        }
+        
+        section#about .col-md-2 {
+            font-weight: bold;
+        }
+
+        section#portfolio .col-md-4 {
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body data-spy="scroll">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a href="#" class="navbar-brand">Miguel Barra</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a href="#header" class="nav-item nav-link active">Home <span class="sr-only">(current)</span></a>
+                <a data-scroll href="#about" class="nav-item nav-link">About</a>
+                <a data-scroll href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <a data-scroll href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+    <header id="header" class="text-white">
+        <div class="container text-center">
+            <h1>Portfolio Webpage</h1>
+            <p class="lead">I am a Developer from Santiago, Chile. I enjoy building everything from small business sites to rich interactive web apps. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here.</p>
+            <a data-scroll href="#about" class="btn btn-outline-light">About me</a>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- section 1 -->
+    <section id="about">
+        <div class="container">
+            <h2>
+                I'm Miguel Barra
+                <br>
+                <small>Developer and Coffee Addict</small>
+            </h2>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="lead">Accomplished Analyst Programmer specializing in Mobile and Web development. 2 years of experience developing and implementing interactive websites. Innovate use of technology. Able to complete projects efficiently and satisfy customers with attractive user-friendly websites.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">Age</div>
+                <div class="col-md-8">28</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">Address</div>
+                <div class="col-md-8">Gonzalo Bulnes 2511b, Quinta Normal</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">Email</div>
+                <div class="col-md-8"><a href="mailto:mbarra.1945@gmail.com">mbarra.1945@gmail.com</a></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">Phone</div>
+                <div class="col-md-8">+56 9 3531 0226</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">Github's profile</div>
+                <div class="col-md-8"><a href="#">https://github.com/mbarra1945</a></div>
+            </div>
+            <div class="clearfix"></div>
+            <button class="btn btn-outline-primary my-4">Curriculum Vitae</button>
+        </div>
+    </section> <!-- end section 1 -->
+    <!-- section 2 -->
+    <section id="portfolio" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="https://image.ibb.co/ftv2Rc/under_construction.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Project #1</h5>
+                            <p class="card-text">Mollit esse eiusmod tempor ipsum enim.</p>
+                            <button class="btn btn-dark">Go to the project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="https://image.ibb.co/ftv2Rc/under_construction.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Project #2</h5>
+                            <p class="card-text">Mollit esse eiusmod tempor ipsum enim.</p>
+                            <button class="btn btn-dark">Go to the project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="https://image.ibb.co/ftv2Rc/under_construction.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Project #3</h5>
+                            <p class="card-text">Mollit esse eiusmod tempor ipsum enim.</p>
+                            <button class="btn btn-dark">Go to the project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section 2 -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Contact</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="inputName">Name</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPhone">Phone</label>
+                            <input type="tel" class="form-control" id="inputPhone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputMessage">Message</label>
+                            <textarea class="form-control" id="inputMessage" placeholder="Message"></textarea>
+                        </div>
+                        <div class="clearfix"></div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section 3 -->
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-8 text-center text-white">
+                Copyright &copy; Miguel Barra 2018
+            </p>
+            <p class="m-8 text-center text-white">
+                <a href="#"><i class="social-network fa fa-github"></i></a>
+                <a href="#"><i class="social-network fa fa-linkedin"></i></a>
+                <a href="#"><i class="social-network fa fa-twitter"></i></a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+</html>
